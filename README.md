@@ -1,6 +1,6 @@
 # Caesar Cipher
 
-## Rozwiązanie zadania:
+## Rozwiązanie do zadania:
 
 Stwórz moduł eksportujący z pomocą ES6 Modules funkcję caesar13. Jako parametr funkcja ta ma
 przyjmować ciąg znaków a następnie zwracać zaszyfrowany zgodnie z ROT13. Wykorzystaj powyższy
