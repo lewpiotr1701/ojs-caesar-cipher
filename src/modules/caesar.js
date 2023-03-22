@@ -9,6 +9,8 @@ function caesar13(input) {
   inputArr.forEach(char => {
     if ((/[a-zA-Z]/).test(char)) {
       encodedInput.push(encodeLetter(char));
+    } else {
+      encodedInput.push(char);
     }
   });
 
