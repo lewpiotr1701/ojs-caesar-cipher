@@ -7,14 +7,14 @@ function caesar13(input) {
   const encodedInput = [];
 
   inputArr.forEach(char => {
-    if ((/[a-zA-Z]/).test(char)) {
-      encodedInput.push(encodeLetter(char));
-    } else {
-      encodedInput.push(char);
-    }
+    encodedInput.push(shouldEncode(char) ? encodeLetter(char) : char);
   });
 
   return encodedInput.join('');
+}
+
+function shouldEncode(char) {
+  return (/[a-zA-Z]/).test(char)
 }
 
 function encodeLetter(letter) {
