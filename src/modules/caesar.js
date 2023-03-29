@@ -1,6 +1,5 @@
 function caesar13(input) {
-  if (input === '') throw new Error('Input can not be empty');
-  if (typeof input !== 'string') throw new Error('Input must be a string');
+  checkInput(input);
 
   const inputArr = input.split('');
 
@@ -29,6 +28,11 @@ function encodeLetter(letter) {
     const encodedASCIINumber = (((ASCIINumber - 65) + 13) % 26) + 65;
     return String.fromCharCode(encodedASCIINumber);
   }
+}
+
+function checkInput(input) {
+  if (input === '') throw new Error('Input can not be empty');
+  if (typeof input !== 'string') throw new Error('Input must be a string');
 }
 
 export default caesar13
