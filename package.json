@@ -3,8 +3,8 @@
   "source": "src/index.html",
   "public-url": "https://github.com/lewpiotr1701/ojs-caesar-cipher",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url ./",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
