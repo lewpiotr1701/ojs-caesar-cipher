@@ -1,11 +1,14 @@
 {
   "name": "caesar-cipher",
   "source": "src/index.html",
+  "public-url": "https://github.com/lewpiotr1701/ojs-caesar-cipher",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "parcel": "^2.8.3"
   }
 }
